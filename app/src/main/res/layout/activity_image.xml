@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageActivity"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/outline_cancel_presentation_black_18dp"
+        android:layout_marginLeft="330dp"
+        android:id="@+id/img1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discover smoothies"
+        android:textSize="20sp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000">
+
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bev"
+        android:id="@+id/img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:text="Discover thousands of tasty smoothies for any drink enthusiast"
+        android:textSize="12sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="5dp"
+       >
+
+    </TextView>
+
+    <com.trncic.library.DottedProgressBar
+        android:id="@+id/progress"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        app:activeDot="@drawable/active_dot"
+        android:backgroundTint="@color/colorPrimaryDark"
+        app:dotSize="15dp"
+        app:inactiveDot="@drawable/inactive_dot"
+        app:jumpingSpeed="250"
+        app:spacing="15dp" />
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#26A69A"
+        android:text="Continue"
+        android:textColor="#ffff"
+        android:textSize="16sp"
+        />
+</LinearLayout>
